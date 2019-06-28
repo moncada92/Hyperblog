@@ -1,0 +1,95 @@
+-COMANDOS DE TERMINAL
+
+- pwd: me arroja en que parte estoy ubicando, en que carpeta o del disco duro.
+
+- ls -al: muestra todas las carpetas que hay en el directorio actual inlcuidas las              ocultas
+
+- mkdir : crear carpetas.
+
+- touch : nos permite crear archivos vacios EJ: touch name.extension
+
+- cat: lee el contenido del texto de los archivos EJ cat prueba.txt
+
+- history: nos muestra todo el historial de comandos que hemos usado en la terminal,             para repetir el comando solo usamos el signo ! y el numero de comando que             aparezca listado.
+
+- rm: borra los archviso que seleccionemos eJ rm prueba.txt
+
+
+------------------------->
+------------------------->
+------------------------->
+
+
+COMANDOS DE GIT:
+
+- git init: inicia el proyecto, en este momento simplemente esta en la carpeta en la              cual estamos realizando nuestro proyecto.
+
+- git add: lo agregamos al stage o staging, que es un almacenamiento de los archivos temporalmente en memoria ram .
+
+- commit -m : commit solo sirve pero con -m puedes agregarle un texto en donde digas que cambio espesifico subiste, esto guarda nuestro proyecto en el repositorio.cuando se ejecuta este comando estas creando una nueva version del proyecto.
+
+- git status: nos permite ver el status de nuestros archivos del projecto, si se a echo add o commit de ellos o si no se a guardado los cambios realizados en los archivos.
+
+- git rm : borramos el archivo o archivos del repositorio o mas extacto del staging.
+
+- git rm --cached : borra el cache para que definitivamente borre el archivo del git, ya que al no borrar el cache puede que aun no se elimine completamente-
+
+- git log archivo.txt : nos permite mirara el detalle del comit realizado a el o los archivos , codigo commit, author, correo, fecha, etc.
+
+- git show archivo,txt: ves todos los cambios dentro de los ficheros que has modificado. Es decir, te muestra fichero por fichero, todos los modificados, indicando qué ha cambiado en cada uno de ellos.
+
+-git diff codigoCommit codigoCommit: nos permite comaprar los cambios en dos versiones especificas del archivo usando los codigos de commit ejemplo hemos echo 5 cambios y comparo los cambios de la v2 con la v4
+
+-git reset codigoCommit: devuelve a una versión anterior de nuestro archivo, dependiendo del tag seleccionado
+
+    --hard(Devuelve absolutamente todo a la versión anterior referida en el tag)
+
+    --soft(devuielve el estado del archivo al descrito en el tag, mas no así los archivos que se encuentran en el staging area)
+
+- merge: es cuando se realiza un hotfix o mas conocido como arreglo de un bug de la version final de tu proyecto, lo solucionas y lo subes a esa utlima version.
+
+- cuando no escribamos un comentario al hacer commit nos llevara a otro panel en donde deberemos de escribir un comentario ya q es una buena practica y para salir de esa ventana oprimimos Esc + Shift + z + z
+
+
+
+------------------------->
+------------------------->
+------------------------->
+
+CONFIGURAR GIT CORRECTAMENTE:
+
+- git config --list: nos permite mirar la configuracion por defecto que trae git para asi mismo poder cambiar o rellenar campos que nos haga falta.
+
+- git config --global: nos permite hacer los cambios espesificos de los campos de configuracion del git como los son datos del username email etc.
+
+
+
+
+------------------------->
+------------------------->
+------------------------->
+
+
+El flujo de Gitflow es así:
+
+En la rama master tendremos solo lo que se ha liberado.
+
+1.- Se crea la rama develop, es la rama en la que estamos trabajando (lo que vamos a liberar).
+
+2.- Liberar a producción con tu equipo de trabajo se crea una release desde develop.
+
+No se pasa directo de develop a master, Git Flow crea la nueva rama de release.
+
+3.- Por cada petición o tarea se genera una rama llamada feature a partir de develop.
+
+4.- Por ejemplo una pantalla nueva, se crea y está completa el feature de pantalla se cierra y se afusiona con develop.
+
+5.- Cuando tienes la rama release terminada, fusionas con develop y master.
+
+6.- Si hay problema en master se crea hotfix que son los cambios sobre algo que está en producción.
+
+7.- Se crea una nueva rama se trabaja y se reintegra. Una vez que hotfix se completa, se fusiona a ambos develop y master.
+
+en git puedes tener tantas ramas como quieras ya se al master, developer,hotfix, etc
+
+
