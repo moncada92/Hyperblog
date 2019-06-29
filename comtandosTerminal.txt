@@ -119,3 +119,23 @@ en git puedes tener tantas ramas como quieras ya se al master, developer,hotfix,
 
 Las Ramas (Branch) son las formas que nos permite relizar ediciones de nuestro proyecto sin afectar el mismo, es como una copia del mismo en otro lado, lo cual impide editar erróneamente el código original.
 Cuando se crea una rama, se crea una copia de la rama principal, y todos los cambios que se realicen en la nueva rama no será replicado en la rama principal(master)
+
+
+-------------------------------------------------------->
+-------------------------------------------------------->
+-------------------------------------------------------->
+
+
+GITHUB:
+
+- git remote add origin: agregamos el origen (el repositorio creado en github).
+
+-git remote : nos confirma que estemos conectados al origen.
+
+- git remote -v : nos indica que podemos traer(fetch) y enviar archivos (push) al origen (repositorio).
+
+- git push origin master: enviamos los archivos de la rama master a el repositorio
+
+- git pull origin master: traemos y unimos los archivos del repositorio a nuestro proyecto local como un fetch y merge.
+
+- git pull origin master --allow-unrelated-histories: esto fuerza a que podamos fucional las historias de las ramas que tenemos en local con la del repositorio, se hace normalmente cuando se crea un repositorio en hithub y tenemos un proyecto en git local y necesitamos convinarlos en uno solo.
