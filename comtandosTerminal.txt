@@ -38,13 +38,26 @@ COMANDOS DE GIT:
 
 - git show archivo,txt: ves todos los cambios dentro de los ficheros que has modificado. Es decir, te muestra fichero por fichero, todos los modificados, indicando qué ha cambiado en cada uno de ellos.
 
--git diff codigoCommit codigoCommit: nos permite comaprar los cambios en dos versiones especificas del archivo usando los codigos de commit ejemplo hemos echo 5 cambios y comparo los cambios de la v2 con la v4
+- git diff codigoCommit codigoCommit: nos permite comaprar los cambios en dos versiones especificas del archivo usando los codigos de commit ejemplo hemos echo 5 cambios y comparo los cambios de la v2 con la v4
 
--git reset codigoCommit: devuelve a una versión anterior de nuestro archivo, dependiendo del tag seleccionado
+- git reset codigoCommit: devuelve a una versión anterior de nuestro archivo, dependiendo del tag seleccionado
 
     --hard(Devuelve absolutamente todo a la versión anterior referida en el tag)
 
     --soft(devuielve el estado del archivo al descrito en el tag, mas no así los archivos que se encuentran en el staging area)
+
+- git log --stat: Muestran en detalle los cambios realizados a partir del ultimo commit
+
+- git checkout codigoCommit archivo : Un salto en el tiempo de creacion del commit identificado por el tag escrito, los cambios no son definitivos, se mantienen en el staging area, por el contrario, si se realiza el commit posterior al checkout se corre el peligro de guardar definitivamente el salto realizado y por ende la pérdida de los archivos
+para volver al estado inicial git checkout master+nombre archivo
+
+- git push: subimos los archivos al servidor remoto ejemplo github
+
+- git fetch: nos permite tener una copia actualizada del repositorio remoto, pero sin reemplazar nuestro proyecto actual local cuando lo copiemos, es decir queda en otra rama
+
+- git merge: nos permite actualizar y reemplazar los archivos locales, cuando clonamos del repositorio de github.
+
+- git pull: una combinacion de git fetch para clonar y git merge para reemplazar por los archivos locales. 
 
 - merge: es cuando se realiza un hotfix o mas conocido como arreglo de un bug de la version final de tu proyecto, lo solucionas y lo subes a esa utlima version.
 
