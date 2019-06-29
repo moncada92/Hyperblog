@@ -59,6 +59,12 @@ para volver al estado inicial git checkout master+nombre archivo
 
 - git pull: una combinacion de git fetch para clonar y git merge para reemplazar por los archivos locales. 
 
+- git commit -am "mensaje" : es como ejecutar las dos funciones principales: git add y git commit OJO => este comando solo funciona sobre archivo que ya han sido editadas con anterioridad(que ya hayan tenido un commit).
+
+- git branch nombre_rama : crea una rama con el nombre descrito
+
+- git checkout nombre_rama : Se muda de rama
+
 - merge: es cuando se realiza un hotfix o mas conocido como arreglo de un bug de la version final de tu proyecto, lo solucionas y lo subes a esa utlima version.
 
 - cuando no escribamos un comentario al hacer commit nos llevara a otro panel en donde deberemos de escribir un comentario ya q es una buena practica y para salir de esa ventana oprimimos Esc + Shift + z + z
@@ -69,13 +75,13 @@ para volver al estado inicial git checkout master+nombre archivo
 ------------------------->
 ------------------------->
 
+
+
 CONFIGURAR GIT CORRECTAMENTE:
 
 - git config --list: nos permite mirar la configuracion por defecto que trae git para asi mismo poder cambiar o rellenar campos que nos haga falta.
 
 - git config --global: nos permite hacer los cambios espesificos de los campos de configuracion del git como los son datos del username email etc.
-
-
 
 
 ------------------------->
@@ -106,3 +112,10 @@ No se pasa directo de develop a master, Git Flow crea la nueva rama de release.
 en git puedes tener tantas ramas como quieras ya se al master, developer,hotfix, etc
 
 
+------------------------->
+------------------------->
+------------------------->
+
+
+Las Ramas (Branch) son las formas que nos permite relizar ediciones de nuestro proyecto sin afectar el mismo, es como una copia del mismo en otro lado, lo cual impide editar erróneamente el código original.
+Cuando se crea una rama, se crea una copia de la rama principal, y todos los cambios que se realicen en la nueva rama no será replicado en la rama principal(master)
