@@ -11,4 +11,6 @@ Un blog increible para el aprendizaje de git y GitHub
 * Creado por el increíble Platzi Team
 * Incluye ejemplos en Windows, Linux y Mac
 * Disponible para todas las edades
-* aprende a tu ritmo.
+* Aprende a tu ritmo.
+* Realiza todas las pruebas que quieras.
+* El mejor aprendizaje de todos.
