@@ -12,3 +12,4 @@ Un blog increible para el aprendizaje de git y GitHub
 * Incluye ejemplos en Windows, Linux y Mac
 * Disponible para todas las edades
 * aprende a tu ritmo.
+* realiza todas las pruebas que quieras.
